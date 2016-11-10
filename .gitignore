@@ -57,6 +57,7 @@ target/
 
 # Local
 .DS_Store
+.ai
 .babelrc
 .tox/
 .vagrant/
