@@ -1,0 +1,23 @@
+{
+  "name": "owri-holding-page",
+  "version": "1.0.0",
+  "authors": [
+    "KDL <kdl-info@kcl.ac.uk>"
+  ],
+  "description": "Basic template for the OWRI holding page",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://kdl.kcl.ac.uk",
+  "dependencies": {
+    "foundation-sites": "~6.2.0",
+    "motion-ui": "~1.2.2"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}

@@ -1,0 +1,344 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+/* Custom styles */
+
+blockquote {
+    &.description {
+        background: rgba($light-gray, .7);
+        border-left: 0;
+        color: $black;
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        margin: rem-calc(48) auto 0;
+        max-width: rem-calc(640);
+    }
+}
+
+h1.site-title,
+h1.site-title a {
+    color: $secondary-color;
+    font-family: "Playfair Display", serif;
+    font-size: rem-calc(48);
+    font-weight: 700;
+    padding: rem-calc(24 0);
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+nav {
+    background: $secondary-color;
+
+    li.active {
+        font-weight: 700;
+    }
+}
+
+p {
+    font-family: "Playfair Display", serif;
+    font-size: 75% !important;
+}
+
+span.fa-stack-1x {
+    &.number {
+        left: -50%;
+    }
+}
+
+.banner {
+    background: url('../images/banner-splash-ok.png') top right no-repeat, url('../images/banner-splash-ok-flipped.png') top left no-repeat $light-gray;
+    height: rem-calc(478);
+    margin: rem-calc(0 0 50);
+    padding: rem-calc(30);
+}
+
+.banner2 {
+    background: $light-gray;
+    margin: rem-calc(0 0 50);
+    padding: rem-calc(30);
+    text-align: center;
+}
+
+.blob {
+    left: 50%;
+    position: absolute;
+    top: rem-calc(-60);
+
+    i {
+        left: -50%;
+    }
+
+    .fa-circle:before {
+        color: $white;
+    }
+}
+
+.blocks {
+    background: scale-color($primary-color, $lightness: 85%);
+    margin: rem-calc(30 0 0);
+    padding: rem-calc(90 16 16);
+    position: relative;
+}
+
+.top-bar-title {
+    color: $white;
+}
+
+/** Colors **/
+
+.dark-blue-bg {
+    background-color: $dark-blue;
+}
+
+.light-yellow-bg {
+    background-color: $light-yellow;
+}
+
+.dark-blue {
+
+    button,
+    a.button {
+        background-color: $dark-blue !important;
+
+        &:hover {
+            background-color: scale-color($dark-blue, $lightness: 30%) !important;
+        }
+    }
+
+    h2 {
+        color: $dark-blue;
+    }
+
+    span.fa-stack-1x {
+        &.number {
+            color: $dark-blue;
+        }
+    }
+
+    .blob {
+        .fa-puzzle-piece {
+            color: $dark-blue;
+        }
+    }
+
+    .blocks {
+        background: scale-color($dark-blue, $lightness: 85%);
+    }
+}
+
+.dark-orange {
+
+    button,
+    a.button {
+        background-color: $dark-orange !important;
+
+        &:hover {
+            background-color: scale-color($dark-orange, $lightness: 30%) !important;
+        }
+    }
+
+    h2 {
+        color: $secondary-color;
+    }
+
+    span.fa-stack-1x {
+        &.number {
+            color: $secondary-color;
+        }
+    }
+
+    .blob {
+        .fa-puzzle-piece {
+            color: $dark-orange;
+        }
+    }
+
+    .blocks {
+        background: scale-color($dark-orange, $lightness: 85%);
+    }
+}
+
+.darkest {
+
+    button,
+    a.button {
+        background-color: $secondary-color !important;
+
+        &:hover {
+            background-color: scale-color($secondary-color, $lightness: 30%) !important;
+        }
+    }
+
+    h2 {
+        color: $secondary-color;
+    }
+
+    span.fa-stack-1x {
+        &.number {
+            color: $secondary-color;
+        }
+    }
+
+    .blob {
+        .fa-puzzle-piece {
+            color: $secondary-color;
+        }
+    }
+
+    .blocks {
+        background: scale-color($secondary-color, $lightness: 85%);
+    }
+}
+
+.light-yellow {
+
+    button,
+    a.button {
+        background-color: $secondary-color !important;
+
+        &:hover {
+            background-color: scale-color($secondary-color, $lightness: 30%) !important;
+        }
+    }
+
+    h2 {
+        color: $secondary-color;
+    }
+
+    span.fa-stack-1x {
+        &.number {
+            color: $secondary-color;
+        }
+    }
+
+    .blob {
+        .fa-puzzle-piece {
+            color: $secondary-color;
+        }
+    }
+
+    .blocks {
+        background: scale-color($light-yellow, $lightness: 50%);
+    }
+}
+
+.orange {
+
+    button,
+    a.button {
+        background-color: $orange !important;
+
+        &:hover {
+            background-color: scale-color($orange, $lightness: -30%) !important;
+        }
+    }
+
+    h2 {
+        color: $secondary-color;
+    }
+
+    span.fa-stack-1x {
+        &.number {
+            color: $secondary-color;
+        }
+    }
+
+    .blob {
+        .fa-puzzle-piece {
+            color: $orange;
+        }
+    }
+
+    .blocks {
+        background: scale-color($orange, $lightness: 85%);
+    }
+}
+
+.turquoise {
+
+    button,
+    a.button {
+        background-color: $turquoise !important;
+
+        &:hover {
+            background-color: scale-color($turquoise, $lightness: -30%) !important;
+        }
+    }
+
+    h2 {
+        color: $dark-blue;
+    }
+
+    span.fa-stack-1x {
+        &.number {
+            color: $dark-blue;
+        }
+    }
+
+    .blob {
+        .fa-puzzle-piece {
+            color: $turquoise;
+        }
+    }
+
+    .blocks {
+        background: scale-color($turquoise, $lightness: 85%);
+    }
+}
+
+footer {
+    background: $light-gray;
+    padding: rem-calc(40 0);
+}
+
+/*****************/
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
