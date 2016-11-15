@@ -39,10 +39,10 @@ nav {
     }
 }
 
-p {
-    font-family: "Playfair Display", serif;
-    font-size: 75% !important;
-}
+// p {
+//     font-family: "Playfair Display", serif;
+//     font-size: 75% !important;
+// }
 
 span.fa-stack-1x {
     &.number {
@@ -62,6 +62,10 @@ span.fa-stack-1x {
     margin: rem-calc(0 0 50);
     padding: rem-calc(30);
     text-align: center;
+
+    p {
+        margin-bottom: 0;
+    }
 }
 
 .blob {
@@ -83,6 +87,23 @@ span.fa-stack-1x {
     margin: rem-calc(30 0 0);
     padding: rem-calc(90 16 16);
     position: relative;
+}
+
+.bottom-margin {
+    margin-bottom: rem-calc(24);
+}
+
+.logos-group {
+    text-align: center;
+
+    img {
+        max-height: rem-calc(80);
+    }
+
+    .column {
+        text-align: center;
+        padding: rem-calc(16);
+    }
 }
 
 .top-bar-title {
