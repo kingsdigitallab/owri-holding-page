@@ -61,10 +61,19 @@ span.fa-stack-1x {
     background: $light-gray;
     margin: rem-calc(0 0 50);
     padding: rem-calc(30);
-    text-align: center;
+    // text-align: center;
+
+    img {
+        height: 100%;
+        max-width: rem-calc(500);
+        margin-bottom: rem-calc(24);
+        margin-right: rem-calc(24);
+        float: left;
+    }
 
     p {
         margin-bottom: 0;
+        padding: rem-calc(20 0);
     }
 }
 
